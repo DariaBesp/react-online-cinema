@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 8;
+  background-color: $color-grey-footer;
+  padding: 40px 0;
+  width: 100%;
+
+  @include vp-767 {
+    padding: 24px 0 36px 0;
+  }
+
+  &__socials {
+    padding: 0;
+  }
+}

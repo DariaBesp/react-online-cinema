@@ -1,0 +1,81 @@
+.account-setting {
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include vp-767 {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    width: 100%;
+
+    @include vp-767 {
+      max-width: 271px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include vp-767 {
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-white-50;
+  }
+
+  &__text-data {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-white;
+  }
+
+  &__view-user {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 14px;
+    background-color: $color-white-50;
+    border-radius: 30px;
+
+    @include vp-767 {
+      padding: 8px;
+    }
+  }
+
+  &__view-icon {
+    padding: 18px;
+    background-color: $color-white-50;
+    border-radius: 30px;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include vp-767 {
+      padding: 12px;
+    }
+  }
+
+  &__btn-logout {
+    width: 262px;
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+}

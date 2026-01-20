@@ -1,0 +1,83 @@
+.register-form {
+  //сам блок формы
+  padding: 24px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-white;
+  margin: 0 0 24px 0;
+
+  &__button {
+    width: 100%;
+  }
+
+  &__wrapper-input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 0 24px 0;
+    width: 340px;
+
+    @include vp-767 {
+      width: 295px;
+    }
+  }
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:focus,
+  &:focus-visible,
+  &:hover {
+    .form-field__input {
+      border: 1px solid $color-melrose;
+    }
+    .form-field__icon {
+      color: $color-melrose;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    color: $color-white-40;
+  }
+
+  &__input {
+    padding: 16px 16px 16px 52px;
+    border: 1px solid $color-white-40;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-black;
+    outline: none;
+
+    &:not(:placeholder-shown) {
+      + .form-field__icon {
+        color: $color-black-40;
+      }
+    }
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 24px;
+      color: $color-white-40;
+    }
+  }
+  &--error {
+    .form-field__input {
+      border: 1px solid $color-bittersweet;
+    }
+    .form-field__icon {
+      color: $color-bittersweet;
+    }
+    .form-field__icon,
+    .form-field__input:not(:placeholder-shown) + .form-field__icon {
+      color: $color-bittersweet;
+    }
+  }
+}

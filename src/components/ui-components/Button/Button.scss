@@ -1,0 +1,40 @@
+//типы кнопок по стилю сортировка
+//1 - secondary прозрачные -  войти - тип - баттон
+//2 - "Primary" - голубые с круглениями - трейлер
+//3- tertiary - /о фильме/лайк/обновить - серые
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: $color-white;
+  text-align: center;
+  text-decoration: none;
+
+  &--secondary {
+    background-color: inherit;
+    padding: 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &--primary {
+    background-color: $color-cornflower-blue;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 28px;
+  }
+
+  &--tertiary {
+    background-color: $color-cape-cod;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 28px;
+    padding: 16px;
+    border: 1px solid $color-black-40;
+  }
+}

@@ -1,0 +1,18 @@
+.form-field {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    color: $color-white-40;
+
+    &--error {
+      color: $color-bittersweet;
+    }
+  }
+}

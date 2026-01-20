@@ -1,0 +1,110 @@
+.video-play {
+  z-index: 9;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-woodsmoke-90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &__content {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      width: 600px;
+      height: 345px;
+    }
+
+    @include vp-767 {
+      width: 375px;
+      height: 212px;
+    }
+
+    @media (orientation: landscape) and (max-width: 900px) {
+      width: 663px;
+      height: 375px;
+    }
+  }
+
+  &__btn-close {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    right: -72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: $color-white;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    pointer-events: auto;
+
+    @include vp-767 {
+      right: 8px;
+      top: 8px;
+      padding: 4px;
+    }
+
+    @media (orientation: landscape) and (max-width: 900px) {
+      right: 8px;
+      top: 8px;
+      padding: 4px;
+    }
+  }
+
+  &__btn-play-pause {
+    cursor: pointer;
+    pointer-events: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: $color-white;
+  }
+
+  &__icon-close {
+    width: 24px;
+    height: 24px;
+    color: $color-black;
+  }
+
+  &__title {
+    display: none;
+
+    pointer-events: none;
+    position: absolute;
+    bottom: 20px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 24px 40px;
+    background-color: $color-woodsmoke-50;
+
+    @include vp-767 {
+      bottom: -60px;
+    }
+  }
+}

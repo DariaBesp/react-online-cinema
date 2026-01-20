@@ -1,0 +1,42 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-white-25: rgba(255, 255, 255, 0.25);
+$color-white-15: rgba(255, 255, 255, 0.15);
+$color-white-40: rgba(0, 0, 0, 0.4);
+$color-white-50: rgba(255, 255, 255, 0.5);
+$color-white-70: rgba(255, 255, 255, 0.7);
+$color-white-80: rgba(255, 255, 255, 0.8);
+$color-black-40: rgba(0, 0, 0, 0.4);
+$color-black-50: rgba(0, 0, 0, 0.5);
+$color-grey-footer: #37374a;
+$color-cape-cod: #393b3c;
+$color-woodsmoke: #0a0b0b;
+$color-woodsmoke-50: rgba(10, 11, 11, 0.5);
+$color-woodsmoke-90: rgba(10, 11, 11, 0.9);
+
+$color-cornflower-blue: #67a5eb;
+$color-blue-marguerite: #6a5dc2;
+$color-melrose: #b4a9ff;
+$color-heliotrope: #dc5dfc;
+
+$color-pirate-gold: #a59400;
+$color-forest-green: #308e21;
+$color-boulder: #777777;
+$color-boulder-secondary: #747474;
+$color-thunderbird: #c82020;
+$color-bittersweet: #ff7575;
+$color-fiord: #45526e;
+$color-shadow: rgba(255, 255, 255, 0.33);
+
+//linear-gradient-background
+$bg-start: #000000;
+$bg-end: rgba(39, 36, 36, 0.7);
+$accent-start: rgba(39, 135, 245, 0.9);
+$accent-end: rgba(163, 147, 245, 0.9);
+
+//Typography
+$ff-play: "Play", "Arial", sans-serif;
+
+// Viewport
+$vp-tablet: 1023px;
+$vp-mobile: 767px;

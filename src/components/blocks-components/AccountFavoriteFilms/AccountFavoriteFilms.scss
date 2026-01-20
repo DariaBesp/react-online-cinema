@@ -1,0 +1,35 @@
+.favorite-films {
+  margin: 0;
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 40px;
+    height: 100%;
+
+    @include vp-767 {
+      flex-wrap: nowrap;
+      gap: 40px;
+      justify-content: flex-start;
+      width: 100vw;
+      overflow: auto;
+
+      padding: 90px 20px;
+      margin: -90px -20px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    @include vp-767 {
+      flex-shrink: 0;
+    }
+  }
+}

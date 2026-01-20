@@ -1,0 +1,49 @@
+.btn {
+  &__trailer {
+    width: 171px;
+    &--main {
+      @include vp-767 {
+        width: 100%;
+      }
+    }
+
+    &--film {
+      @include vp-767 {
+        width: 251px;
+      }
+    }
+  }
+
+  &__favorite {
+    width: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--active {
+      color: $color-melrose;
+    }
+  }
+
+  &__refetch {
+    width: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link-about {
+    width: 183px;
+    background-color: $color-cape-cod;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 28px;
+    padding: 16px;
+    border: 1px solid $color-black-40;
+
+    @include vp-767 {
+      width: 167px;
+    }
+  }
+}

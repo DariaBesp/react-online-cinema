@@ -1,0 +1,32 @@
+.card-film {
+  position: relative;
+  width: 100%;
+
+  &__link {
+    display: block;
+    line-height: 0;
+  }
+
+  &__number {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: $color-white;
+    color: $color-blue-marguerite;
+    width: 62px;
+    border-radius: 50px;
+  }
+
+  &__image {
+    border-radius: 16px;
+    height: 336px;
+    box-shadow: 0px 0px 80px 0px $color-shadow;
+    border: 1px solid $color-white-25;
+  }
+}

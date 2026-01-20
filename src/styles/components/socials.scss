@@ -1,0 +1,63 @@
+@use "../global/variables.scss" as *;
+@use "../global/mixins.scss" as *;
+
+.socials {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+
+  @include vp-767 {
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  &__link {
+    display: flex;
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+    border: 1px solid $color-white-80;
+    align-items: center;
+    justify-content: center;
+
+    @include vp-767 {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      border: 2px solid $color-white;
+    }
+  }
+
+  &__icon-vk {
+    @include vp-767 {
+      width: 13px;
+      height: 7px;
+    }
+  }
+
+  &__icon-youtube {
+    @include vp-767 {
+      width: 11px;
+      height: 8px;
+    }
+  }
+
+  &__icon-ok {
+    @include vp-767 {
+      width: 7px;
+      height: 12px;
+    }
+  }
+
+  &__icon-tg {
+    @include vp-767 {
+      width: 11px;
+      height: 9px;
+    }
+  }
+}

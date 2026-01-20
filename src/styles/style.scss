@@ -1,0 +1,10 @@
+//global
+@use "./global/fonts";
+@use "./global/container";
+@use "./global/mixins" as *;
+@use "./global/variables" as *;
+@use "./global/reboot";
+@use "./global/normalize";
+
+//components/blocks
+@use "./components/socials.scss";

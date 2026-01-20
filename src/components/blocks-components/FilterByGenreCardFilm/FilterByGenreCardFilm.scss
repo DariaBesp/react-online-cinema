@@ -1,0 +1,19 @@
+.card-film-genre {
+  width: 224px;
+
+  @include vp-767 {
+    width: 335px;
+  }
+
+  &__image {
+    border-radius: 16px;
+    height: 336px;
+    box-shadow: 0px 0px 80px 0px $color-shadow;
+    border: 1px solid $color-white-25;
+    width: auto;
+
+    @include vp-767 {
+      height: 502px;
+    }
+  }
+}

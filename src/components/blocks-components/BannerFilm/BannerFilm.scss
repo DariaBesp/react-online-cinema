@@ -1,0 +1,215 @@
+.banner-film {
+  margin: 0 0 42px 0;
+  padding: 32px 0 0 0;
+
+  @include vp-767 {
+    padding: 0;
+    margin: 0 0 56px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include vp-767 {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 552px;
+
+    @media (max-width: 840px) {
+      height: 400px;
+    }
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 600px;
+    height: 100%;
+
+    @media (max-width: 1050px) {
+      width: 450px;
+    }
+    @include vp-767 {
+      max-width: 335px;
+      padding: 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    margin: 0 0 60px 0;
+
+    @include vp-767 {
+      margin: 0 0 32px 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+
+  &__image {
+    border-radius: 16px;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+
+    @include vp-767 {
+      max-height: 234px;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    border-radius: 16px;
+
+    &--bad {
+      background-color: $color-thunderbird;
+    }
+    &--average {
+      background-color: $color-boulder;
+    }
+    &--good {
+      background-color: $color-forest-green;
+    }
+    &--excellent {
+      background-color: $color-pirate-gold;
+    }
+  }
+
+  &__rating-text {
+    color: $color-white;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__releaseYear {
+    color: $color-white-70;
+    font-size: 18px;
+    line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__genre {
+    color: $color-white-70;
+    font-size: 18px;
+    line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__runtime {
+    color: $color-white-70;
+    font-size: 18px;
+    line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    padding: 0;
+    margin: 0 0 16px 0;
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &__plot {
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-white-70;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    @include vp-767 {
+      justify-content: center;
+    }
+  }
+
+  &__small-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &--small {
+    margin: 0;
+
+    .banner-film {
+      &__wrapper {
+        padding: 20px 8px;
+        flex-direction: row-reverse;
+        gap: 16px;
+      }
+
+      &__plot {
+        display: none;
+      }
+
+      &__image {
+        width: 100%;
+        height: 52px;
+      }
+
+      &__title {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+a:hover {
+  color: inherit;
+}

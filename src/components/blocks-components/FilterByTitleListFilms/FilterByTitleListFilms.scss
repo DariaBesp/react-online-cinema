@@ -1,0 +1,39 @@
+.filter-title {
+  z-index: 8;
+  width: 559px;
+
+  @include vp-767 {
+    width: 100%;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: $color-cape-cod;
+    border-radius: 8px;
+    padding: 8px;
+    flex-direction: column;
+    display: flex;
+
+    @include vp-767 {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100vw;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    @include vp-767 {
+      flex-shrink: 0;
+      max-width: 220px;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.info-film {
+  margin: 0 0 120px 0;
+
+  @include vp-767 {
+    margin: 0 0 32px 0;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0 0 64px 0;
+    padding: 0;
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include vp-767 {
+      gap: 0;
+    }
+  }
+
+  &__item {
+    margin: 0 0 12px 0;
+  }
+
+  &__line {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__description {
+    display: flex;
+    width: 320px;
+    gap: 4px;
+
+    @include vp-767 {
+      width: auto;
+    }
+  }
+
+  &__description-text {
+    font-size: 18px;
+    line-height: 24px;
+    width: auto;
+    color: $color-white;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      color: $color-white-50;
+    }
+  }
+
+  &__data {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-white;
+  }
+
+  &__border {
+    flex-grow: 1;
+    border-bottom: 1px dashed $color-white-50;
+    transform: translateY(-5px);
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}

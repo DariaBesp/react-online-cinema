@@ -1,3 +1,5 @@
+Your site is live at https://dariabesp.github.io/react-online-cinema/
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

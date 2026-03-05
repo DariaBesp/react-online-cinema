@@ -1,4 +1,4 @@
-Your site is live at https://dariabesp.github.io/react-online-cinema/
+Site is live at https://dariabesp.github.io/react-online-cinema/
 
 # React + TypeScript + Vite
 

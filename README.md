@@ -1,75 +1,136 @@
-Site is live at https://dariabesp.github.io/react-online-cinema/
+# 🎬 React Online Cinema — Онлайн-платформа для поиска фильмов
 
-# React + TypeScript + Vite
+## 🌐 Демо
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://dariabesp.github.io/react-online-cinema/
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Описание
 
-## React Compiler
+Полнофункциональное приложение для поиска фильмов, позволяющее пользователям:
+- Регистрироваться и авторизоваться
+- Искать фильмы по названию
+- Просматривать информацию о фильмах
+- Добавлять фильмы в избранное
+- Смотреть трейлеры фильмов
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Технологический стек
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** — библиотека для построения пользовательского интерфейса
+- **TypeScript** — строгая типизация
+- **React Router** — маршрутизация между страницами
+- **Redux** — управление состоянием приложения
+- **Axios** — HTTP-клиент для работы с API
+- **Vite** — быстрый сборщик проектов
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Установка и запуск
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Требования
+- Node.js (v16 и выше)
+- npm или yarn
+
+### Установка
+
+```bash
+# Клонируйте репозиторий
+git clone https://github.com/DariaBesp/react-online-cinema.git
+
+# Перейдите в директорию проекта
+cd react-online-cinema
+
+# Установите зависимости
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Запуск в режиме разработки
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Приложение откроется на `http://localhost:5173`
+
+### Сборка для продакшена
+
+```bash
+npm run build
+```
+
+### Предпросмотр собранного проекта
+
+```bash
+npm run preview
+```
+
+---
+
+## ✨ Основные возможности
+
+### Дизайн и верстка
+- ✅ Адаптивная верстка по макетам Figma
+- ✅ Собственные стили без использования UI-библиотек
+- ✅ Оптимизированная работа на всех устройствах
+
+### Аутентификация
+- 🔐 Регистрация новых пользователей
+- 🔓 Авторизация и вход в аккаунт
+- ✔️ Валидация форм
+
+### Работа с контентом
+- 🔍 Поиск фильмов по названию
+- ⭐ Добавление и удаление фильмов из избранного
+- 🎯 Просмотр подробной информации о фильме
+- 📹 Модальное окно для просмотра трейлеров
+
+---
+
+## 📁 Структура проекта
+
+```
+react-online-cinema/
+├── src/
+│   ├── components/   # UI-компоненты
+│   ├── pages/        # Страницы приложения
+│   ├── store/        # Redux store
+│   ├── services/     # API (Axios)
+│   ├── hooks/        # Кастомные хуки
+│   ├── styles/       # Стили
+│   ├── types/        # Типы (TypeScript)
+│   └── App.tsx       # Корневой компонент
+├── public/           # Статика
+├── vite.config.ts    # Конфигурация Vite
+├── tsconfig.json     # Конфигурация TypeScript
+└── package.json      # Зависимости
+```
+
+---
+
+## 🔗 API
+
+Приложение взаимодействует с backend API для:
+- Авторизации пользователей
+- Поиска ��ильмов
+- Получения информации о фильмах
+- Управления избранным
+
+---
+
+## 📱 Адаптивность
+
+Приложение корректно работает на:
+- 📱 Мобильных устройствах (от 320px)
+- 📲 Планшетах (от 768px)
+- 🖥️ Десктопах (от 1024px)
+
+---
+
+## 👤 Автор
+
+[DariaBesp](https://github.com/DariaBesp)
+
+## Спасибо за внимание к проекту! ⭐
